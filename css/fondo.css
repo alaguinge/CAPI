@@ -1,0 +1,8 @@
+body{
+    /* background-color: cadetblue; */
+    background-image: url('../img/montañas.png');
+    background-repeat: no-repeat; /* no mosaico*/
+    background-size:cover; /*expande img*/
+    width: 100%; /*para que no se vea línea blanca*/
+    height: 100%; 
+}

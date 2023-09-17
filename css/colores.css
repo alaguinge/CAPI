@@ -1,0 +1,19 @@
+/* Por nombre */
+#p1{
+    background-color: red;
+}
+
+/* Valor hexadecimal */
+#p2{
+    background-color: #ff0000;
+}
+
+/* rgb() */
+#p3{
+    background-color: rgb(255, 0, 0) ;
+}
+
+/* rgba() */
+#p4{
+    background-color: rgba(255,0,0,1);
+}

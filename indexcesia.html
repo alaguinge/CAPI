@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="container-nav">
+        <nav class="navbar">
+            <a href="index.html" class="brand">CÓRDOBA</a>
+            <ul class="nav-links">
+                <li><a href="mi-primer-website4.html">Home</a></li>
+                <li><a href="lugares/fotos.html">Galería</a></li>
+                <li><a href="lugares/listado.html">Tabla</a></li>
+                <li><a href="https://www.google.com/maps/@-31.4396976,-64.3846743,11z?entry=ttu"
+                        target="_blank">Google</a></li>
+            </ul>
+        </nav>
+        </header>
+        <button class="button-menu-toggle">Menu</button>
+    </div>
+
+
+    <div class="container">
+        <h1> Bienvenidos a Córdoba: </h1>
+        <div class="row">
+            <div class="column">
+                <main>
+                    <!-- Contenido principal -->
+                    <selection>
+                        <h2><mark>Descubre</mark> la Magia de Nuestra Tierra </h2>
+                        <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura, te
+                            damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
+                            sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
+                            perdurarán en tu memoria para siempre.</p>
+                        <h2><mark>Explora</mark> Nuestros Paisajes Únicos</h2>
+                        <p>Desde las majestuosas Sierras de Córdoba hasta los valles serenos, nuestras tierras ofrecen
+                            un abanico de escenarios que quitan el aliento. Recorre senderos rodeados de exuberante
+                            vegetación, sumérgete en cristalinas aguas de ríos y embalses, y descubre rincones
+                            escondidos que revelan la grandeza de la naturaleza.</p>
+                        <h2><mark>Sumérgete </mark>en Nuestra Rica Historia</h2>
+                        <p>Córdoba es testigo de siglos de historia, y cada rincón cuenta una parte de nuestra
+                            narrativa. Explora las calles empedradas de la ciudad colonial, maravíllate ante
+                            arquitectura centenaria y descubre museos que te transportarán en el tiempo. Nuestra
+                            historia cobra vida en cada monumento y en cada tradición que todavía se celebra con
+                            orgullo.</p>
+
+
+                    </selection>
+            </div>
+            <div class="column">
+                <section>
+                    <h2><mark>Vive</mark> Auténticas</h2>
+                    <p>Nuestro compromiso es que vivas Córdoba en su esencia más pura. Participa en festivales
+                        folklóricos que celebran nuestras raíces, saborea la deliciosa gastronomía regional que
+                        combina sabores únicos, y siente la calidez de nuestra gente en cada interacción. Cada
+                        momento en Córdoba es una oportunidad para conectarte con la autenticidad que nos define.
+                    </p>
+                    <h2><mark>Planifica </mark>Tu Viaje con Nosotros</h2>
+                    <p>En esta página, encontrarás toda la información que necesitas para planificar tu aventura en
+                        Córdoba. Desde recomendaciones de alojamiento y rutas sugeridas, hasta consejos locales que
+                        enriquecerán tu experiencia, estamos aquí para ser tu guía en esta travesía. Permítenos ser
+                        parte de tu viaje y ayudarte a crear recuerdos inolvidables.</p>
+
+
+                    </p>
+                </section>
+                </main>
+            </div>
+            <h1>Contacta Con Nosotros</h2>
+                <p>Si tienes preguntas, necesitas asistencia o deseas obtener más detalles, no dudes en ponerte
+                    en contacto con nuestro equipo. Estamos aquí para hacer de tu visita a Córdoba una
+                    experiencia excepcional.</p>
+                <p>Descubre Córdoba, descubre la auténtica alma de Argentina. ¡Bienvenido a un viaje que
+                    cambiará tu perspectiva para siempre!</p>
+        </div>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: rgb(234, 191, 240);
+            color: rgb(5, 5, 97);
+        }
+
+
+        h1 {
+            font-family: "arial", "sans-self";
+            font-size: 36px;
+            text-align: center;
+        }
+
+
+        p {
+            font-family: "Gerogia", "serif";
+            font-size: 18px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+
+        a:hover {
+            color: rgb(26, 3, 48);
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+
+        .video {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #video {
+            width: 50%;
+            height: 50%;
+
+
+        }
+
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+
+
+        .container-nav {
+            display: flex;
+            padding: 10px;
+            height: 50px;
+            background-color: rgb(54, 125, 153);
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+
+        li>a {
+            padding: 8px 24px;
+        }
+
+
+
+
+        li {
+            list-style-type: none;
+        }
+
+
+
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+
+        .button-menu-toggle {
+            display: none;
+        }
+
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+            }
+
+
+
+
+            .nav-links {
+                display: none;
+            }
+
+
+
+
+            .button-menu-toggle {
+                display: block;
+                background-color: white;
+                border: none;
+                border-radius: 50px;
+                padding: 0 24px;
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+
+            .nav-links.nav-links-responsive {
+                position: absolute;
+                display: flex;
+                background-color: rgba(20, 20, 20, 0.95);
+                width: 100%;
+                height: 100%;
+                top: 70px;
+                left: 0;
+                flex-direction: column;
+                padding-top: 200px;
+                align-items: center;
+                gap: 70px;
+                font-size: 40px;
+
+
+
+
+            }
+        }
+
+
+        img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+
+
+</body>
+
+
+</html>

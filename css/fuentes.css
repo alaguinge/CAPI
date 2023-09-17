@@ -1,0 +1,29 @@
+/* Por defecto */
+#p1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Fuente externa, se uso el link que se incorporo en 
+el <head> */
+
+#p2{
+    font-family: "Roboto" ;
+}
+
+
+/* Fuente externa, donde se uso la carpeta con fuentes
+ubicada en fonts  
+el <head> */
+/* @font-face {
+    font-family: "nombre";
+    src: url('');
+} */
+@font-face {
+    font-family: "Alkatra";
+    src: url('../fonts/Alkatra/Alkatra-VariableFont_wght.ttf');
+}
+
+
+#p3{
+    font-family: "Alkatra";
+}

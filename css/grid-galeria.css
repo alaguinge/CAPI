@@ -1,0 +1,140 @@
+/* header */
+/* -----------------LETRA---- */
+@font-face {
+  font-family: "Itim";
+  src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+
+* {
+  margin: 0%; /*Elimina todo margen que trae por defecto*/
+  padding: 0%; /*Elimina todo relleno que trae por defecto*/
+  font-family: "Itim";
+}
+
+/* Menu */
+/* En los hipervínculos del nav eliminar la decoración del texto, color,
+agregar separación entre hipervínculos. */
+.menu {
+  text-decoration: none; /*Elimina subrayado*/
+  color: brown; /*Color texto*/
+  padding-right: 1.5vw; /*Separación entre el texto del menu*/
+  font-size: 2vw; /*Tamaño de fuente*/
+}
+
+/* Asignar a selector de clase(hipervinculo) las 
+propiedades: font-size,color,text-decoration */
+.hipervinculo {
+  font-size: 2vw;
+  color: rgb(212, 199, 195);
+  padding: 2%;
+  text-decoration: none;
+}
+
+/* Card para la imagen */
+.card {
+  background: radial-gradient(teal, rgba(235, 228, 228, 0.897));
+  width: 20vw;
+  height: 34vh;
+  box-shadow: 0 1px 2px 0 rgba(235, 228, 228, 0.897);
+  border-radius: 2vh;
+
+  /* Asignar las propiedades: display, flex-direction
+    align-content*/
+  display: flex; /*un elemento al lado de otro*/
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card > img {
+  width: 18vw;
+  height: auto;
+  border-radius: 1vh 1vh 0vh 0vh;
+  border: 3px solid black;
+  align-items: center;
+  
+}
+
+/*pasa cursor, cambia color*/
+.card:hover {
+  background: teal;
+  box-shadow: 0 1px 2px 0 rgba(235, 228, 228, 0.897); /*Sombra al pasar el cursor por cada caja*/
+}
+
+/* GRID PARA S1 
+Asignar las propiedades: display,grid-template-columns,grid-gap,
+justify-items, margin*/
+.s1 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25vw, 1fr));
+  gap: 1vw;
+  justify-items: center;
+  margin: 0.5vw;
+}
+
+/* Asignar las propiedades:padding y font-size a la clase texto que 
+representa el párrafo de la s2*/
+.texto {
+  font-size: 2vw;
+  padding: 10vw;
+  text-align: justify;
+}
+
+/* Footer Asignar las propiedades:
+display: flex;
+justify-content, align-items,
+column-gap, background-color;
+height */
+
+.pie {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d1b6c3;
+  height: 15vh;
+  align-items: center;
+}
+
+/* Puntos de cortes */
+/*para pantallas chicas:*/
+@media screen and (max-width: 600px) {
+  .s1 {
+    grid-template-columns: repeat(1, minmax(25vw, 1fr));
+  }
+
+  .card {
+    width: 55vw;
+    height: 45vh;
+  }
+
+  .card > img {
+    width: 55vw;
+    height: auto; /*se ajusta a la card*/
+  }
+
+  .texto {
+    font-size: 4vw;
+  }
+
+  header {
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .menu {
+    font-size: 4vw;
+  }
+
+  .logo {
+    width: 15vw;
+  }
+
+  nav {
+    /* nav como columna*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hipervinculo {
+    font-size: 3vw;
+  }
+}

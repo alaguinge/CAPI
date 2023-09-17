@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/CbaDonkIcoLB.ico" type="image/x-icon">
+    <title>FORMULARIO</title>
+    <link rel="STYLESHEET" href="../css/trekstyles.css">
+
+    <!-- letra Barriecito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+
+    <!-- letra Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e31628f38f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="lineal">
+            <img class="logo" src="../img/CbaDonkey.jpeg" alt="logo">
+        </div>
+        <nav class="lineal">
+            <a href="../index.html"> <b>Inicio </b></a>
+            <a href="galeria.html">Circuitos</a>
+            <a href="lista.html">Datos</a>
+            <a href="tabla.html">Videos</a>
+            <a href="https://www.google.com/" target="_blank"> <i>Google </i></a>
+            <a href="https://www.google.com/maps/place/Los+Gigantes,+C%C3%B3rdoba/@-31.3941843,-64.7927379,14.87z/data=!4m6!3m5!1s0x942d12463b8e4de3:0x6fae8af9f105ff35!8m2!3d-31.3949391!4d-64.7800328!16s%2Fg%2F1tvtcfgh?entry=ttu"
+                target="_blank"><span style="background-color: aliceblue;"> Mapa</span></a>
+
+
+        </nav>
+    </header>
+    <!-- <hr>  línea horizontal -->
+    <hr>
+    <!-- contenido -->
+    <main>
+
+        <section class="s1">
+            <h4>Consulta próximas salidas con guías... </h4>
+            <hr>
+            <!-- action: hacia dónde va la info required lo hace obligatorio-->
+            <form action="https://formspree.io/f/xgejkogy" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="45" required placeholder="Ej. Ana">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" maxlength="45" required placeholder="Ej. Pérez">
+                    <br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="18">
+                    <label for="genero">Género:</label>
+
+                    <select name="genero" id="genero">
+                        <option value="F">Fem</option>
+                        <option value="M">Masc</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label for="estacion">Temporada:</label>
+                    <input list="temporada" id="estacion" name="estacion">
+                    <datalist id="temporada">
+                        <option value="Verano"></option>
+                        <option value="Otoño"></option>
+                        <option value="Primavera"></option>
+                        <option value="Invierno"></option>
+                        <option value="Todo el año"></option>
+                    </datalist>
+                </div>
+                <hr>
+
+                <div>
+                    <!-- opciones con círculos, aparece el punto primero -->
+                    <legend>Lugar a conocer...</legend>
+                    <input type="radio" name="area" id="mogote" value="mogote">
+                    <label for="mogote">Cerro Mogote</label>
+
+                    <input type="radio" name="area" id="cruz" value="cruz">
+                    <label for="cruz">Cerro de la Cruz</label>
+
+                    <input type="radio" name="area" id="lisos" value="lisos">
+                    <label for="lisos">Valle de los Lisos</label>
+
+                    <input type="radio" name="area" id="cajones" value="cajones">
+                    <label for="cajones">Cajones</label>
+                    <!-- con name = area, sólo deja elegir una opción por vez -->
+                </div>
+                <hr>
+
+                <div>
+                    <legend>Lugar de salida...</legend>
+                    <!-- permite destildar, en salida se guarda un array -->
+
+                    <input type="checkbox" name="salida" id="cordoba" value="cordoba">
+                    <label for="cordoba">Córdoba</label>
+
+                    <input type="checkbox" name="salida" id="carlospaz" value="carlospaz">
+                    <label for="carlospaz">Carlos Paz</label>
+
+                    <input type="checkbox" name="salida" id="tanti" value="tanti">
+                    <label for="tanti">Tanti</label>
+
+                    <input type="checkbox" name="salida" id="cosquin" value="cosquin">
+                    <label for="cosquin">Cosquín</label>
+
+                    <input type="checkbox" name="salida" id="vallende" value="vallende">
+                    <label for="vallende">Villa Allende</label>
+
+                </div>
+
+                <hr>
+                <!-- área para datos personales -->
+                <!-- no hace falta que fieldset esté dentro de una división -->
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" maxlength="30 px">
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" maxlength="40 px">
+                        <br>
+                        <img src="https://cdn-icons-png.flaticon.com/512/8293/8293100.png" width="30">
+                        <label for="comentario" style="text-align: center;">Comentario: </label>
+                        <textarea placeholder="Escribe un comentario..." name="comentario" id="comentario" cols="60"
+                            rows="4" maxlength="130"></textarea>
+                    </div>
+                </fieldset>
+                <hr>
+        </section>
+        <hr>
+        <div>
+            <!-- botones -->
+            <input class="center" type="submit" value="Enviar"
+                style="background-color: rgb(11, 102, 97); color: white; font-size: large; text-align: center;">
+            <input class="center" type="reset" value="Borrar"
+                style="background-color: rgb(120, 121, 112); color:black; font-size: large;">
+        </div>
+
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        Autores: Grupo 2, CAPI - #23528 <a href="mailto:alaguinge@gmail.com">Contacto</a>
+    </footer>
+</body>
+
+</html>
